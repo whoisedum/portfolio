@@ -1,0 +1,75 @@
+---
+import GitHub from "./icons/GitHub.astro"
+import NextJS from "./icons/NextJS.astro"
+import Tailwind from "./icons/Tailwind.astro"
+import Link from "./icons/Link.astro"
+import LinkButton from "./LinkButton.astro"
+
+const TAGS = {
+  NEXT: {
+    name: "Next.js",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+}
+const PROJECTS = [
+  {
+    title: "SVGL - A beautiful library with SVG logos",
+    description:
+      " ",
+  },
+  {
+    title: "SVGL - A beautiful library with SVG logos",
+    description:
+      " ",
+  },
+  {
+    title: "SVGL - A beautiful library with SVG logos",
+    description:
+      " ",
+  },
+  {
+    title: "SVGL - A beautiful library with SVG logos",
+    description:
+      "Nada por el momento :(",
+  },
+  {
+    title: "SVGL - A beautiful library with SVG logos",
+    description:
+      " ",
+  },
+  {
+    title: "SVGL - A beautiful library with SVG logos",
+    description:
+      " ",
+  },
+]
+---
+
+<div class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ description }) => (
+    <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-6 md:space-y-0">
+  <div class="w-full md:w-1/2">
+  </div>
+
+  <div class="w-full md:w-1/2 md:max-w-lg">
+    <div class="flex flex-wrap mt-2">
+
+      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+      <footer class="flex items-end justify-start mt-4 gap-x-4">
+      </footer>
+    </div>
+  </div>
+</article>
+    ))
+  }
+</div>
+
+
+
